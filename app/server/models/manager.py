@@ -15,4 +15,4 @@ class UpdateManagerSchema(BaseModel):
 
 
 def responseModel(data, message):
-    return {"data": [data], code: 200, "message": message}
+    return {"data": [data], "code": 200, "message": message}
