@@ -4,8 +4,8 @@ from app.server.models.manager.py import ManagerSchema
 
 MONGO_DETAILS = "mongodb://localhost:27017"
 
-
-base = client.Employees
+client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS)
+database = client.Employees
 
 
 # Create a collection and insert a document
